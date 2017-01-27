@@ -18,10 +18,12 @@
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "express-jwt": "^5.1.0",
+    "express-session": "^1.14.2",
     "jquery": "^3.1.1",
     "jsonwebtoken": "^7.2.1",
     "mongoose": "^4.7.6",
     "morgan": "^1.7.0",
+    "multer": "^1.2.1",
     "node-quickbooks": "^2.0.11",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0"
