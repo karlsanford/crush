@@ -44,6 +44,7 @@ app.get('/',function(req,res){
 
 app.use('/api',apiRoutes);
 
+//serve up static files
 app.use(express.static(path.join(__dirname, 'node_modules' )))
 app.use(express.static(path.join(__dirname, 'client')))
 

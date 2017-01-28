@@ -1,7 +1,8 @@
 var app = angular.module('mainApp')
 
-app.controller('profileCtrl',['$scope',profileCtrl])
+app.controller('profileCtrl',['$rootScope','$scope',profileCtrl])
 
-function profileCtrl($scope) {
+function profileCtrl($rootScope, $scope) {
     $scope.title = 'profile from ng scope'
+    $scope.user = $rootScope.user;
 }

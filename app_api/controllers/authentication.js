@@ -5,6 +5,10 @@ var passport = require('passport'),
 module.exports.register = function (req,res) {
     console.log('register')
     
+    if(!req.body.name || !req.body.email){
+        res.send('missing name or email')
+    }
+    
     var user = new User();
     
     user.name = req.body.name;
@@ -31,5 +35,5 @@ module.exports.register = function (req,res) {
 }
 
 module.exports.login = function (req,res) {
-    
+    res.send('no login implemented')
 }
