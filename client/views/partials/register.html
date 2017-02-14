@@ -1,26 +1,25 @@
-<div class='container' ng-controller='registerCtrl'>
-    {{title}} <br>
-    {{user.name}}
-    <form>
+<div class='container'>
+    {{vm.title}} <br>
+    {{vm.user.name}}
+    <form ng-submit='vm.onSubmit()'>
         <div class="form-group">
             <label for="regInputName">Name</label>
-            <input ng-model='user.name' type="text" class="form-control" id="regInputName" placeholder="Name">
+            <input ng-model='vm.user.name' type="text" class="form-control" id="regInputName" placeholder="Name">
         </div>
         <div class="form-group">
             <label for="regInputEmail">Email address</label>
-            <input ng-model='user.email' type="email" class="form-control" id="regInputEmail" placeholder="Email">
+            <input ng-model='vm.user.email' type="email" class="form-control" id="regInputEmail" placeholder="Email">
         </div>
         <div class="form-group">
             <label for="regInputPassword1">Password</label>
-            <input ng-model='user.password' type="password" class="form-control" id="regInputPassword1" placeholder="Password">
+            <input ng-model='vm.user.password' type="password" class="form-control" id="regInputPassword1" placeholder="Password">
         </div>
         <div class="form-group">
             <label for="regInputPassword2">Confirm Password</label>
-            <input ng-model='user.password2' type="password" class="form-control" id="regInputPassword2" placeholder="Confirm Password">
+            <input ng-model='vm.user.password2' type="password" class="form-control" id="regInputPassword2" placeholder="Confirm Password">
         </div>
-        <button ng-click="myAlert()">alert</button>
         
-        <button ng-click='register(user)' class='btn btn-default'>submit</button>
+        <button type='submit' class='btn btn-default'>submit</button>
     </form>
     
 </div>

@@ -6,11 +6,15 @@ app.config(function($stateProvider,$urlRouterProvider) {
     $stateProvider.state({
         name: 'home',
         url: '/home',
-        templateUrl: 'views/partials/home.html'
+        templateUrl: 'views/partials/home.html',
+        controller: 'homeCtrl',
+        controllerAs: 'vm'
     }).state({
         name: 'register',
         url: '/register',
-        templateUrl: 'views/partials/register.html'
+        templateUrl: 'views/partials/register.html',
+        controller: 'registerCtrl',
+        controllerAs: 'vm'
     }).state({
         name: 'login',
         url: '/login',
@@ -18,7 +22,9 @@ app.config(function($stateProvider,$urlRouterProvider) {
     }).state({
         name: 'profile',
         url: '/profile',
-        templateUrl: 'views/partials/profile.html'
+        templateUrl: 'views/partials/profile.html',
+        controller: 'profileCtrl',
+        controllerAs: 'vm'
     })
 })
 

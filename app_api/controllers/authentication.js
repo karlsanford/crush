@@ -20,7 +20,7 @@ module.exports.register = function (req,res) {
         //console.log('reg user save')
         if(err) {
             res.status(500)
-            res.json(err.message)
+            //res.json(err.message)
         } else {
             var token;
             token = user.generateJWT()
